@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    
+    
+}
+
+.container{
+    margin: auto;
+    width: 850px;
+    height: 650px;
+    padding: 5px;
+    
+    
+    
+}
+
+.logo{
+    width: 100%;
+    float: left;
+    
+}
+
+.left{
+    float: left;
+    width: 70%;
+    height: 70%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
+}
+
+.right{
+    float: right;
+    width: 30%;
+    height: 558px; /* estaba en auto */
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: rgb(1, 175, 255);
+}
+
+.left-button{
+    float: left;
+    width: 70%;
+    height: auto;
+    /*background-color: pink;*/
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding-bottom: 20px;
+}
+
+.logo-img{
+    margin-top: 1%;
+    margin-left: 5%;
+    float: inherit;
+}
+
+.title-logo{
+    float: inherit;
+    margin-left: 15%;
+}
+
+.text-input{
+    float: left;
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 80%;
+    height: 60%;
+    color: #0A3871;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    background: F3F5FC;
+}
+
+#imgDer{
+    margin-left: 2%;
+    margin-top: 5%;
+    width: 90%;
+    height: auto;
+}
+
+#texto{
+    text-align: center;
+
+}
+
+#texto2{
+    float: left;
+    margin-left: 10%;
+    color: #0A3871;
+    width: 80%;
+    height: 35%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#btn-encriptar{
+    padding: 2px;
+    width: 200px;
+    height: 40px;
+    border-radius: 24px;
+    margin-left: 10%;
+    background: #0A3871;
+    color: #fff;
+    font-size: 24px;
+    background-image: url("images/unlock.png");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position-x: 12px;
+    background-position-y: 4px;
+    
+}
+
+#btn-encriptar:hover{
+    background-image: url("images/lock.png");
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+  
+}
+  
+button:active{
+    transform: translateY(3px);
+}
+
+
+#btn-desencriptar{
+    padding: 2px;
+    width: 200px;
+    height: 40px;
+    border-radius: 24px;
+    margin-left: 10%;
+    background: #DBDFE8;
+    font-size: 24px;
+    background-image: url("images/lock.png");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position-x: 2px;
+    background-position-y: 4px;
+}
+
+#btn-desencriptar:hover{
+    background-image: url("images/unlock.png");
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+#copiar{
+    margin-left: 15%;
+    margin-top: 495px;
+    padding: 2px;
+    width: 200px;
+    height: 40px;
+    background: #DBDFE8;
+    border-radius: 24px;
+    display: none;
+    font-size: 24px;
+
+    
+}
+
+#aviso{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.candados{
+    height: 20px;
+}
+
+@media screen and (max-width:480px){
+
+    .container{
+        width: 100%;
+        text-align: center;
+        
+    }
+    .left{
+        width: 100%;
+        height: 30%;
+    }
+
+    #texto2{
+        padding: 10px;
+        height: 45%;
+        margin-bottom: 15px;
+    }
+
+    .right{
+        width: 100%;
+        height: 40%;
+    }
+
+    #imgDer{
+        display: none;
+    }
+    .left-button{
+        width: 100%;
+    }
+
+    #copiar{
+        margin-top: 100px;
+        margin-left: 25%;
+    }
+}
